@@ -1,0 +1,8 @@
+@font-face {
+font-family: ‘Remboy-Regular’;
+src: url(’./Remboy-Regular.ttf’) format('ttf’),
+url(’./Remboy-Regular.ttf’) format('ttf’);
+font-weight: regular;
+font-style: normal;
+font-display: swap;
+}
