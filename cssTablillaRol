@@ -1,0 +1,138 @@
+.rtwenties {
+  width:350px;
+  padding:80px 40px;
+  margin:0 auto;
+  background:var(--bckg);
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.rtwenties:before, .rtwenties:after {
+  content:"";
+  width:1px;
+  height:100%;
+  position:absolute;
+  display:block;
+  background:var(--accent1);
+  top:0;
+}
+
+.rtwenties:before { left:15px; }
+
+.rtwenties:after { right:15px; }
+
+.rtwenties br { display:none; }
+
+.rtwenties .rttext br { display:block; }
+
+.rtwenties::selection, .rtwenties *::selection { background:var(--accent1); color:var(--title); }
+
+.rtwenties .rtdeco {
+  background:var(--accent1);
+  width:80px;
+  height:100px;
+  position:absolute;
+}
+
+.rtwenties .rtdecotop {top:0;}
+.rtwenties .rtdecobot {bottom:0;}
+
+.rtwenties .rtdeco:before {
+  content:"";
+  display:block;
+  position:absolute;
+  width:78px;
+  height:98px;
+  background:var(--bckg);
+  left:1px;
+  top:0px;
+}
+
+.rtwenties .rtdecotop, .rtwenties .rtdecotop:before {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.rtwenties .rtdecobot, .rtwenties .rtdecobot:before {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.rtwenties .rtdecobot:before { top:unset; bottom:0px; }
+
+.rtwenties .rttit {
+  text-shadow:var(--shadow-d);
+  color:transparent;
+  position:relative;
+  margin: -42px auto 35px;
+  z-index:1;
+  font:30px 'Abril Fatface';
+  text-transform:uppercase;
+  -webkit-text-stroke:1px var(--title);
+}
+
+.rtwenties .rticon {
+  width:60px;
+  height:60px;
+  border-radius:100%;
+  border:1px solid var(--accent1);
+  position:relative;
+  z-index:1;
+  padding:10px;
+  background:var(--bckg);
+}
+
+.rtwenties .rticon img {
+  width:60px;
+  height:60px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:100%;
+}
+
+.rtwenties .rttext {
+  color:var(--text);
+  font:12px 'Roboto';
+  width:350px;
+  text-align:justify;
+  margin:40px 0;
+  line-height:16px;
+}
+
+.rtwenties .rtsubtit {
+  position:relative;
+  z-index:1;
+  color:var(--title);
+  text-shadow:var(--shadow-d);
+  bottom:-30px;
+  font:10px 'Roboto';
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.rtwenties a, .rtwenties strong, .rtwenties b {
+  color:var(--accent1);
+}
+
+.rtwenties em, .rtwenties i {
+  color:var(--accent2);
+}
+
+
+.ncredit {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 10px;
+  text-decoration: none;
+  font: 8px verdana;
+  color:#aaa;
+}
+.rtwenties + br + .ncredit {
+  margin-top: -15px;
+}
+.ncredit:before {
+  content: "©";
+}
